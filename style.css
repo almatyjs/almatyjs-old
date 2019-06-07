@@ -1,0 +1,217 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  height: 100vh;
+}
+
+::selection {
+  background: #ef3124;
+  color: #ffffff;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3.5rem;
+  font-size: 42px;
+  color: #2e2e2e;
+  font-weight: 500;
+}
+
+img {
+  display: inline-block;
+  margin-left: 1.2rem;
+  max-width: 100%;
+}
+
+.btn {
+  max-width: 100%;
+  text-decoration: none;
+  display: inline-block;
+  min-width: 20rem;
+  text-align: center;
+  padding: 1.2rem;
+  font-size: 20px;
+  color: #2e2e2e;
+  border: 1px solid #ef3124;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn + .btn {
+  margin-left: 2rem;
+}
+
+.btn-red {
+  color: #ffffff;
+  background: #ef3124;
+}
+
+.btn-red:hover {
+  color: #ef3124;
+  background: #ffffff;
+}
+
+.btn-white:hover {
+  color: #ffffff;
+  background: #2e2e2e;
+  border-color: #2e2e2e;
+}
+
+.actions {
+  display: flex;
+}
+
+@media (max-width: 780px) {
+  header, .actions {
+    display: block;
+  }
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5rem;
+  }
+
+  .btn + .btn {
+    margin-top: 1rem;
+    margin-left: 0rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .btn {
+    display: block;
+    font-size: 1rem;
+    min-width: 0;
+  }
+}
